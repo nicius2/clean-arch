@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  db-mongo:
+    image: bitnami/mongodb:latest
+    container_name: mongo_db
+    ports:
+      - "27017:27017"
+    environment:
+      MONGODB_ROOT_PASSWORD: ${MONGODB_ROOT_PASSWORD}
+      MONGODB_DATABASE: ${DATABASE_NAME}
+      MONGODB_USERNAME: ${DATABASE_USER}
+      MONGODB_PASSWORD: ${DATABASE_PASSWORD}
+    volumes:
+      - mongo_data:/bitnami/mongodb
+
+volumes:
+  mongo_data:

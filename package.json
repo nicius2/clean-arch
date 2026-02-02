@@ -1,0 +1,32 @@
+{
+  "name": "clean_arch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "types": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc && node ./dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicius2/clean-arch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nicius2/clean-arch/issues"
+  },
+  "homepage": "https://github.com/nicius2/clean-arch#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.1.5",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.2.0"
+  }
+}

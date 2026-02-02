@@ -1,16 +1,10 @@
-import "reflect-metadata"
-import Express from "express"
+import ExpressAdapter from "./infra/http/ExpressAdapter";
+import RouteConfig from "./infra/http/RouteConfig";
+import { MongoConnection } from "./infra/database/mongo/connection";
 
-const PORT = 3000
+const database = new MongoConnection();
+database.connect();
 
-const app = Express()
-app.use(Express.json())
-
-app.get("/", (req, res) => {
-  res.send("Hello World!")
-})
-
-
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`)
-})
+const expressAdapter = new ExpressAdapter()
+new RouteConfig(expressAdapter)
+expressAdapter.listen(3000)

@@ -22,8 +22,7 @@
   "homepage": "https://github.com/nicius2/clean-arch#readme",
   "dependencies": {
     "express": "^5.2.1",
-    "reflect-metadata": "^0.2.2",
-    "typeorm": "^0.3.28",
+    "mongoose": "^9.1.5",
     "typescript": "^5.9.3"
   },
   "devDependencies": {

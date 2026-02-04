@@ -1,11 +1,20 @@
-## Rest API with Clean Architecture - Express (Typescript)
+## REST API with Clean Architecture – Express (TypeScript)
 
-Desenvolvimento de API para fins de estudo sobre Clean Architecture e seus conceitos.
+Este projeto consiste no desenvolvimento de uma **API REST** com **Express e TypeScript**, criada com o objetivo de **estudo e aplicação prática da Clean Architecture** e seus principais conceitos.
 
-usando alguns principios fundamentais como:
-     - `Dependency Inversion Principle (DIP)`
-     - `Single Responsibility Principle (SRP)`
+### 🎯 Objetivos
+- Aplicar os princípios da **Clean Architecture**
+- Promover código desacoplado, testável e de fácil manutenção
+- Separar responsabilidades entre camadas da aplicação
 
-Além de alguns padrões de projeto como:
-     - `Adapter Pattern`
-     
+### 🧱 Princípios aplicados
+- **Dependency Inversion Principle (DIP)**
+- **Single Responsibility Principle (SRP)**
+
+### 🧩 Padrões de projeto utilizados
+- **Adapter Pattern**
+
+### 🛠️ Tecnologias
+- Node.js
+- Express
+- TypeScript

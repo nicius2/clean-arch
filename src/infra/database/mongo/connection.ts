@@ -2,17 +2,18 @@ import mongoose from "mongoose";
 import DatabaseConnection from "../DatabaseConnection";
 
 export class MongoConnection implements DatabaseConnection {
-     async connect(): Promise<void> {
-          try {
-               await mongoose.connect(process.env.DATABASE_URL || "");
-               console.log("Connected to MongoDB");
-          } catch (error) {
-               console.error("Error connecting to MongoDB:", error);
-               process.exit(1);
-          }
-     }
+  async connect(): Promise<void> {
+    const uri = process.env.MONGO_URI;
 
-     async disconnect(): Promise<void> {
-          await mongoose.disconnect();
-     }
+    if (!uri) {
+      throw new Error("MONGO_URI not defined");
+    }
+
+    await mongoose.connect(uri);
+    console.log("Connected to MongoDB");
+  }
+
+  async disconnect(): Promise<void> {
+    await mongoose.disconnect();
+  }
 }

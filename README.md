@@ -6,6 +6,7 @@ Este projeto consiste no desenvolvimento de uma **API REST** com **Express e Typ
 - Aplicar os princípios da **Clean Architecture**
 - Promover código desacoplado, testável e de fácil manutenção
 - Separar responsabilidades entre camadas da aplicação
+- Desaclopamento de qualquer framework ou lib.
 
 ### 🧱 Princípios aplicados
 - **Dependency Inversion Principle (DIP)**
